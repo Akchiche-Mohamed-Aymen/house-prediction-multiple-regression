@@ -157,7 +157,7 @@
       const features = [squareFootage, bedrooms, bathrooms, yearBuilt, lotSize, garageSize, neighborhoodQuality];
       
     try {
-      const response = await axios.post("http://127.0.0.1:3000/predict", {
+      const response = await axios.post("https://house-prediction-multiple-regression-3.onrender.com/predict", {
         features,
       });
       console.log(response)
