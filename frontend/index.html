@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+8<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -157,7 +157,7 @@
       const features = [squareFootage, bedrooms, bathrooms, yearBuilt, lotSize, garageSize, neighborhoodQuality];
       
     try {
-      const response = await axios.post("https://house-prediction-multiple-regression-3.onrender.com/predict", {
+      const response = await fetch("127.0.0.1:3000/predict", {
         features,
       });
       console.log(response)
